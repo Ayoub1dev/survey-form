@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      
+      <h1 id="title">STUDENT SURVEY</h1>
+      <p id="description">Thank you for taking the time to fill in this form</p>
+      
+    </header>
+    <div class="main">
+      
+      <form  id="survey-form">
+      
+        <div class="form-group margin" >
+          
+          <label for="name" id="name-label">Name</label> <br>
+            <input type="text" 
+                   id="name" 
+                   placeholder="Enter Your Name" 
+                   maxlegth="15" 
+                   minlength="2" 
+                   required> 
+        </div>
+        <div class="form-group" >
+            
+          <label for="email" id="email-label">Email</label><br>
+              <input type="email" 
+                   id="email" 
+                   placeholder="Enter Your Email" 
+                   maxlegth="64" 
+                   minlength="3" 
+                   required>
+        </div>
+        <div class="form-group" >
+         
+          <label for="number" id="number-label">Age</label><br>
+            <input type="number" 
+                   id="number" 
+                   placeholder="Age" 
+                   max="100" 
+                   min="5" >
+        </div>
+        
+        <div class="form-group">
+          
+          <p>What subjects do you like the most?</p>
+          <label for="dropdown"></label>
+          <select name="Subjects" id="dropdown" required>
+            <option selected disabled >Select favourite subject</option>
+            <option value="subject">Maths </option>
+            <option value="subject">Science</option>
+            <option value="subject">English</option>
+            <option value="subject">Technology</option>
+            <option value="subject">Pe</option>
+          </select>
+        </div>
+        
+        <div class="form-group table-div">
+          
+          <p>What subjects do you like the most?</p>
+          <table>
+            <tr>
+              <th>&nbsp;</th>
+              <th><label for="c1" >Strongly Disagree</label></th>
+              <th><label for="c2" >Disagree</label></th>
+              <th><label for="c3" >Neutral</label></th>
+              <th><label for="c4" >Agree</label></th>
+              <th><label for="c5" >Strongly Agree</label></th>
+            </tr>
+            <tr>
+              <td>The class descriptions accurately described the content.	</td>
+              <td><input type="radio" id="c1"  name="r1" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r1" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r1" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r1" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r1" value=" Strongly Agree	"></td>
+            </tr>
+            <tr>
+              <td>I was academically prepared for the classes.	</td>
+              <td><input type="radio" id="c1"  name="r2" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r2" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r2" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r2" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r2" value=" Strongly Agree	"></td>
+            </tr>
+            <tr>
+              <td>The class sizes were appropriate.	</td>
+              <td><input type="radio" id="c1"  name="r3" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r3" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r3" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r3" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r3" value=" Strongly Agree	"></td>
+            </tr>
+            <tr>
+              <td>The classes started and ended on time.	</td>
+              <td><input type="radio" id="c1"  name="r4" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r4" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r4" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r4" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r4" value=" Strongly Agree	"></td>
+            </tr>
+            <tr>
+              <td>The classes increased my knowledge of the subject matter.	</td>
+              <td><input type="radio" id="c1"  name="r5" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r5" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r5" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r5" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r5" value=" Strongly Agree	"></td>
+            </tr>
+            <tr>
+              <td>The overall quality of the classes was excellent.	</td>
+              <td><input type="radio" id="c1"  name="r6" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r6" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r6" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r6" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r6" value=" Strongly Agree	"></td>
+            </tr>
+            <tr>
+              <td>I would recommend these classes to other students.	</td>
+              <td><input type="radio" id="c1"  name="r7" value="Strongly Disagree	"></td>
+              <td><input type="radio" id="c2"  name="r7" value=" Disagree	"></td>
+              <td><input type="radio" id="c3"  name="r7" value=" Neutral	"></td>
+              <td><input type="radio" id="c4"  name="r7" value=" Agree	"></td>
+              <td><input type="radio" id="c5"  name="r7" value=" Strongly Agree	"></td>
+            </tr>
+          </table>
+          
+        </div>
+        
+         <div class=" checkbox-div"> 
+           
+           <p>What extra subjects will you choose to study next year?</p>
+           
+           <label >
+             <input type="checkbox"
+                    value="BTEC PE"
+             > BTEC PE
+           </label>
+           <br>
+           <label>
+             <input type="checkbox"
+                    value="french ">
+                    French
+           </label>
+           <br>
+           <label>
+             <input type="checkbox"
+                    value="Spanish ">
+                    Spanish
+           </label>
+           <br>
+           <label>
+             <input type="checkbox"
+                    value="German ">
+                    German
+           </label>
+           <br>
+           <label>
+             <input type="checkbox"
+                    value="Cooking ">
+                   Cooking 
+           </label>
+        </div>
+        
+        <div class="form-group">
+          
+          <p>What could we do to increase your level of satisfaction?</p>
+          <textarea name="comment" 
+                    id="comments" 
+                    placeholder="Enter your comment here..."
+                    
+          ></textarea>
+        </div>
+        
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+  </div>
+        
+</body>
+</html>
